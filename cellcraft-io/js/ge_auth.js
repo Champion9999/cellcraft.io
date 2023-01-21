@@ -1,0 +1,1 @@
+function onSignIn(n){n.getBasicProfile();var t=n.getAuthResponse().id_token;window.setGeAct(t)}function googleSignOut(){gapi.auth2.getAuthInstance().signOut().then((function(){console.log("User signed out.")}))}function renderButton(){console.log("long titlke"),gapi.signin2.render("my-signin2",{longtitle:!0,theme:"dark"})}
